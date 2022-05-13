@@ -1,7 +1,8 @@
-const fetchData = (to, from, amount) => {
+const fetchData = (from, to, amount) => {
+  console.log(from, to, amount)
   let myHeaders = new Headers();
-  // myHeaders.append("apikey", process.env.REACT_APP_API_KEY);
-  myHeaders.append("apikey", 'API_KEY');
+  myHeaders.append("apikey", process.env.REACT_APP_API_KEY);
+  // myHeaders.append("apikey", 'API_KEY');
 
   let requestOptions = {
     method: "GET",

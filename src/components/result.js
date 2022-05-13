@@ -1,5 +1,4 @@
 import React from "react";
-import input from "./input";
 
 const Results = ({ props }) => {
   return (
