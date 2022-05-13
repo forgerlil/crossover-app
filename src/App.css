@@ -21,14 +21,14 @@ body{
     
 }
 
-#ihave{
+#iHave{
     display:flex;
     justify-content:center;    
     margin-top:1rem;
     
 }
 
-#iHaveValue{
+.iHaveValue{
     font-size: xx-large;
 }
 
