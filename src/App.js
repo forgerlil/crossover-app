@@ -1,9 +1,7 @@
-
 import "./App.css";
 import { useState, useEffect } from "react";
 import Results from "./components/result";
 import logo from "./medien/Logo_Currencylogo.png";
-
 // import fetchData from './components/API-fetch';
 
 
@@ -17,11 +15,11 @@ function App() {
     "USD",
     "EUR",
     "GBP",
-    "AMD",
+    "PLN",
     "CHF",
     "JPY",
     "PLN",
-    "CZK",
+    "CAD",
     "BRL",
     "AMD",
   ];
