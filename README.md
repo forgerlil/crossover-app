@@ -29,11 +29,12 @@ npm run test
 
 👤 **Lilian Forger, Maria Blanco, Norayr Kaloyan, Christian Scholtysik**
 
-* Github: [@forgerlilhttps:\/\/github.com\/forgerlil, https:\/\/github.com\/mariblan\/mariblan.github.io, https:\/\/github.com\/norayrkaloyan, https:\/\/github.com\/ChristianScholtysik](https://github.com/forgerlilhttps:\/\/github.com\/forgerlil, https:\/\/github.com\/mariblan\/mariblan.github.io, https:\/\/github.com\/norayrkaloyan, https:\/\/github.com\/ChristianScholtysik)
+- Github: @forgerlilhttps:\/\/github.com\/forgerlil, https:\/\/github.com\/mariblan\/mariblan.github.io, https:\/\/github.com\/norayrkaloyan, https:\/\/github.com\/ChristianScholtysik
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
