@@ -1,7 +1,11 @@
+
 import "./App.css";
 import { useState, useEffect } from "react";
 import Results from "./components/result";
+import logo from "./medien/Logo_Currencylogo.png";
+
 // import fetchData from './components/API-fetch';
+
 
 function App() {
   const [data, setData] = useState(false);
@@ -64,9 +68,20 @@ function App() {
   };
 
   return (
+
+  
+
     <div className="App">
+      <div id="logoBox">
+       <img src={logo} id="logo" alt="logo" />
+       </div>
+
       <form className="converter-input-form" onSubmit={handleSubmit}>
+
+        <div id="iHave"><input type="text" className="iHaveValue" name="amount"  /></div>
+
         <input type="text" className="ihave" name="amount" />
+
         <div id="valuesBox">
           <label htmlFor="curr-in">What you have?</label>
           <input list="in" id="curr-in" name="currIn" />
@@ -83,14 +98,15 @@ function App() {
             })}
           </datalist>
         </div>
-        <button type="submit" className="btn btn-primary">
-          Exchange
-        </button>
-        <input type="text" id="myChange" />
-      </form>
-      {data && <Results props={data} />}
+
+        <div id="btnExchange">
+        <button type="submit" className="btn btn-primary">Exchange</button>
+        </div>      </form>
+        {data && <Results props={data} />}
     </div>
-  );
+  )
+
+
 }
 
 export default App;

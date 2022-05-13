@@ -1,33 +1,79 @@
-body {
-  background-image: url("./medien/hintergrundbild.jpg");
-  background-size: auto;
+
+/* header{
+    background-image:url("./medien/CurrencyConV_bigger.png");
+} */
+body{
+    background-image:url("./medien/hintergrundbild.jpg");
+    background-size: 100%;
+    background-repeat:no-repeat;
 }
 
-.ihave {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#logoBox{
+    display:flex;
+    justify-content: center;
+
 }
-#valuesBox {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 20%;
-  margin-right: 20%;
+
+#logo{
+    width:60%;
+    height:400px;
+    object-fit: cover;
+    
+    
 }
-#werts {
-  width: 20%;
+
+#iHave{
+    display:flex;
+    justify-content:center;    
+    margin-top:1rem;
+    
+}
+
+.iHaveValue{
+    font-size: xx-large;
+}
+
+#btnExchange{
+    display:flex;
+    justify-content: center;
+    margin-top: 1rem;;
+}
+
+.btn{
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#valuesBox{
+    display:flex;
+    justify-content:center;
+    /* margin-left: 30%;
+    margin-right: 30%; */
+    margin-top: 2rem;
+    
+}
+#werts{
+    width: 25%;
+    background-color: #aeddcd;
+    color: rgb(10, 8, 8);
 }
 
 #result-field {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin: 10px 10px;
-  padding: 10px 10px;
-  border-radius: 5px;
-}
-
-#ex-txt {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 8px;
-  color: grey;
-}
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border-radius: 5px;
+  }
+  
+  #ex-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    color: grey;
+  }
