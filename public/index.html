@@ -14,10 +14,12 @@
     <title>Crossover One-Day App</title>
   </head>
   <body>
+    
     <main>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <input type="number" className="ihave"></input>
+
+    <div id="ihave"><input type="number" id="iHaveValue" ></input></div>
       <div id="valuesBox">
       <label>
         What you have?
@@ -45,9 +47,10 @@
         <option value="xx" >
       </datalist>
       </div>
-      <button type="button" class="btn btn-primary">Exchange</button>
-      <br>
-      <input type="text" id="myChange">
+      <div id="btnExchange">
+        <button type="button" class="btn ">Exchange</button>
+      </div>
+      
     </main>
   </body>
 </html>

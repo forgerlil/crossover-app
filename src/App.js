@@ -1,14 +1,16 @@
 import "./App.css";
+import logo from "./medien/Logo_Currencylogo.png";
 
 function App() {
   return (
-    <div className="App">
-      The crossover one-day app will be here soon!
-      <br></br>
-      
-
-      
-    </div>
+    <>
+      <div id="logoBox">
+        <img src={logo} id="logo" alt="logo" />
+      </div>
+      <div className="App">
+        
+      </div>
+    </>
   );
 }
 
