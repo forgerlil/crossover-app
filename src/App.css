@@ -19,3 +19,43 @@ body{
 #werts{
     width: 20%;
 }
+
+
+
+/* footer */
+footer {
+    background-color: lightslategray;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.logo-github {
+    width: 4vh;
+    margin: 2vh;
+}
+.logo-api {
+    width: 10vh;
+    margin: 2vh;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright h6 {
+    margin: 2vh;
+}
