@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/crossover-app/static/css/main.31d6cfe0.css",
+    "main.js": "/crossover-app/static/js/main.d346bc00.js",
+    "static/js/787.882928f7.chunk.js": "/crossover-app/static/js/787.882928f7.chunk.js",
+    "index.html": "/crossover-app/index.html",
+    "main.d346bc00.js.map": "/crossover-app/static/js/main.d346bc00.js.map",
+    "787.882928f7.chunk.js.map": "/crossover-app/static/js/787.882928f7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.d346bc00.js"
+  ]
+}
