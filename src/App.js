@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState, useEffect } from "react";
+import Results from "./components/result";
 // import fetchData from './components/API-fetch';
 
 function App() {
@@ -87,7 +88,7 @@ function App() {
         </button>
         <input type="text" id="myChange" />
       </form>
-      {data && <h1>{data.result}</h1>}
+      {data && <Results props={data} />}
     </div>
   );
 }
