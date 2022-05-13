@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/crossover-app/static/css/main.31d6cfe0.css",
-    "main.js": "/crossover-app/static/js/main.d346bc00.js",
+    "main.css": "/crossover-app/static/css/main.d66fb193.css",
+    "main.js": "/crossover-app/static/js/main.9ed932a8.js",
     "static/js/787.882928f7.chunk.js": "/crossover-app/static/js/787.882928f7.chunk.js",
+    "static/media/hintergrundbild.jpg": "/crossover-app/static/media/hintergrundbild.146192939c38afacf8ff.jpg",
+    "static/media/Logo_Currencylogo.png": "/crossover-app/static/media/Logo_Currencylogo.fc60f59e6cfe4ba5192b.png",
     "index.html": "/crossover-app/index.html",
-    "main.d346bc00.js.map": "/crossover-app/static/js/main.d346bc00.js.map",
+    "main.d66fb193.css.map": "/crossover-app/static/css/main.d66fb193.css.map",
+    "main.9ed932a8.js.map": "/crossover-app/static/js/main.9ed932a8.js.map",
     "787.882928f7.chunk.js.map": "/crossover-app/static/js/787.882928f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.d346bc00.js"
+    "static/css/main.d66fb193.css",
+    "static/js/main.9ed932a8.js"
   ]
 }
