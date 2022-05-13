@@ -41,8 +41,8 @@ function App() {
     // setData(fetchData('USD', 'EUR', '100'))
     console.log(url);
     let myHeaders = new Headers();
-    // myHeaders.append("apikey", process.env.REACT_APP_API_KEY);
-    myHeaders.append("apikey", "API_KEY");
+    myHeaders.append("apikey", process.env.REACT_APP_API_KEY);
+    // myHeaders.append("apikey", "API_KEY");
 
     let requestOptions = {
       method: "GET",
@@ -68,20 +68,14 @@ function App() {
   };
 
   return (
-
-  
-
     <div className="App">
       <div id="logoBox">
        <img src={logo} id="logo" alt="logo" />
-       </div>
-
+      </div>
       <form className="converter-input-form" onSubmit={handleSubmit}>
-
-        <div id="iHave"><input type="text" className="iHaveValue" name="amount"  /></div>
-
-        <input type="text" className="ihave" name="amount" />
-
+        <div id="iHave">
+          <input type="text" className="iHaveValue" name="amount"  />
+        </div>
         <div id="valuesBox">
           <label htmlFor="curr-in">What you have?</label>
           <input list="in" id="curr-in" name="currIn" />
@@ -98,11 +92,11 @@ function App() {
             })}
           </datalist>
         </div>
-
         <div id="btnExchange">
-        <button type="submit" className="btn btn-primary">Exchange</button>
-        </div>      </form>
-        {data && <Results props={data} />}
+          <button type="submit" className="btn btn-primary">Exchange</button>
+        </div>      
+      </form>
+      {data && <Results props={data} />}
     </div>
   )
 
