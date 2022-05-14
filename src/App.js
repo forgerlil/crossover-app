@@ -36,7 +36,7 @@ function App() {
   useEffect(() => {
     // setData(fetchData(to, from, amount))
     // setData(fetchData('USD', 'EUR', '100'))
-    // console.log(url);
+    console.log(url);
     let myHeaders = new Headers();
     myHeaders.append("apikey", process.env.REACT_APP_API_KEY);
     // myHeaders.append("apikey", "API_KEY");
@@ -65,42 +65,38 @@ function App() {
   };
 
   return (
-    <div className="App-parent">
-      <div className="App">
-        <div id="logo">
-          <img src={logo} id="logo" alt="logo" />
-        </div>
-        <form className="converter-input-form" onClick={handleSubmit}>
-          <div id="iHave">
-            <label htmlFor="amount">Amount</label>
-            <input type="text" id="amount" name="amount" />
-          </div>
-          <div id="valuesBox">
-            <label htmlFor="curr-in">Which currency do you have?</label>
-            <input list="in" id="curr-in" name="currIn" />
-            <datalist id="in">
-              {currencies.map((currency, index) => {
-                return <option key={index} value={currency} />;
-              })}
-            </datalist>
-            <label htmlFor="curr-out">Which do you need?</label>
-            <input list="out" id="curr-out" name="currOut" />
-            <datalist id="out">
-              {currencies.map((currency, index) => {
-                return <option key={index} value={currency} />;
-              })}
-            </datalist>
-          </div>
-          <div id="btnExchange">
-            <button type="submit" className="btn btn-primary">
-              Exchange
-            </button>
-          </div>
-        </form>
-        <div id="result-field">
-          <div>{data && <Results props={data} />}</div>
-        </div>
+    <div className="App">
+      <div id="logoBox">
+        <img src={logo} id="logo" alt="logo" />
       </div>
+      <form className="converter-input-form" onSubmit={handleSubmit}>
+        <div id="iHave">
+          <label htmlFor="amount">Amount</label>
+          <input type="text" id="amount" name="amount" />
+        </div>
+        <div id="valuesBox">
+          <label htmlFor="curr-in">Which currency do you have?</label>
+          <input list="in" id="curr-in" name="currIn" />
+          <datalist id="in">
+            {currencies.map((currency, index) => {
+              return <option key={index} value={currency} />;
+            })}
+          </datalist>
+          <label htmlFor="curr-out">Which currency do need?</label>
+          <input list="out" id="curr-out" name="currOut" />
+          <datalist id="out">
+            {currencies.map((currency, index) => {
+              return <option key={index} value={currency} />;
+            })}
+          </datalist>
+        </div>
+        <div id="btnExchange">
+          <button type="submit" className="btn btn-primary">
+            Exchange
+          </button>
+        </div>
+      </form>
+      {data && <Results props={data} />}
     </div>
   );
 }
