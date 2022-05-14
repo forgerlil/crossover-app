@@ -1,9 +1,8 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import Results from "./components/result";
-import logo from "./medien/Logo_Currencylogo.png";
+import logo from "./medien/Logo.png";
 // import fetchData from './components/API-fetch';
-
 
 function App() {
   const [data, setData] = useState(false);
@@ -68,21 +67,22 @@ function App() {
   return (
     <div className="App">
       <div id="logoBox">
-       <img src={logo} id="logo" alt="logo" />
+        <img src={logo} id="logo" alt="logo" />
       </div>
       <form className="converter-input-form" onSubmit={handleSubmit}>
         <div id="iHave">
-          <input type="text" className="iHaveValue" name="amount"  />
+          <label htmlFor="amount">Amount</label>
+          <input type="text" id="amount" name="amount" />
         </div>
         <div id="valuesBox">
-          <label htmlFor="curr-in">What you have?</label>
+          <label htmlFor="curr-in">Which currency do you have?</label>
           <input list="in" id="curr-in" name="currIn" />
           <datalist id="in">
             {currencies.map((currency, index) => {
               return <option key={index} value={currency} />;
             })}
           </datalist>
-          <label htmlFor="curr-out">What you need?</label>
+          <label htmlFor="curr-out">Which currency do need?</label>
           <input list="out" id="curr-out" name="currOut" />
           <datalist id="out">
             {currencies.map((currency, index) => {
@@ -91,14 +91,14 @@ function App() {
           </datalist>
         </div>
         <div id="btnExchange">
-          <button type="submit" className="btn btn-primary">Exchange</button>
-        </div>      
+          <button type="submit" className="btn btn-primary">
+            Exchange
+          </button>
+        </div>
       </form>
       {data && <Results props={data} />}
     </div>
-  )
-
-
+  );
 }
 
 export default App;

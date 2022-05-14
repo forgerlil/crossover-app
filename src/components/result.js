@@ -1,10 +1,10 @@
 import React from "react";
 
 const Results = ({ props }) => {
-  console.log(props)
+  console.log(props);
   return (
-    <div id="result-field">
-      <div>
+    <div>
+      <div id="result-field">
         {props.result} {props.query.to}
       </div>
       <div id="ex-txt">{`Exchange rate as of ${props.date}`}</div>
